@@ -51,7 +51,7 @@ public class ExcelController {
 	private final PrivacyServiceImpl privacyServiceImpl = new PrivacyServiceImpl();
 	private static final Logger logger = LoggerFactory.getLogger(ExcelController.class);
 	@Autowired
-	private ExcelToJsonServiceImpl excelService;
+	private ExcelToJsonServiceImpl excelService ;
 	@Autowired
 	private ExcelServiceImpl excelRg;
 	private ExcelToJsonServiceImpl excelToJson;

@@ -1,0 +1,258 @@
+INSERT INTO t_currency_code (currency_code_id, currency_code, created_by, created_date, modified_by, modified_date, sap_currency_code, currency_description, currency_description_arabic,currency_name) VALUES(34200,'ERN', 'support', Current_timestamp, 'support', Current_timestamp, 'ERN, NULL, NULL,NULL);
+INSERT INTO psaudimofa1.t_country_code
+(country_id, region_id, country_name, country_code, created_by, created_date, modified_by, modified_date, phone_number_example, additional_info, display_decimal_positions, currency_code_id, number_of_sms_attempts, sms_time_interval, sms_gateway_url, sms_gateway_user, sms_gateway_password, sla_expiry_days, sms_gateway_code_id, reschedule_uptil_appointment, reschedule_upgrade_rule, benchmarked_days, is_miscellaneous_fee_required, print_language_id, country_timezone, email_id, is_arabic_fields_required, call_center_number, is_swap_decimal_comma, is_enabled_for_tasheel, is_enabled_for_etimad, website_url, is_agent_group_scheduling, is_subagent_enable, is_passport_enumber_man, is_so_stage_for_bio_only, fee_rounding_position, fee_value_rounding_type, mu_prior_reschedule_days, mu_appointment_days, agent_city_wise, agent_process_wise, show_enjaxit_form, show_document_submitted, show_visa_fees_paid, skip_from_spoke_to_hub, is_autofill_enabled, is_preapproprint_req, is_addressprint_req, noshow_days_bio_normal, noshow_days_full_normal, noshow_days_bio_lounge, noshow_days_full_lounge, is_pr_validation_required, pr_validation_no_of_char, is_pr_pp_validation_required, is_pr_dob_validation_required, is_pr_ed_validation_required, is_pr_override, pr_post_validation, is_vsc_mgr_pwd_saved, is_hide_tax_percentage, icr_english_header, icr_arabic_header, send_otp_as_sms_for_save_appl, grand_total_round_off, lounge_consent_language, insurance_rounding_position, insurance_value_rounding_type, is_visafee_by_nationality, is_enjaz_payment_before_appt, is_payment_gateway_enabled, is_vas_display_reqd, show_vasfee_in_grid, is_icr_include_mac_id, accreditation_number, is_tax_included_unit_fee, is_agent_quota_by_visa_type, is_vat_included_in_icr, is_applicable_sap, is_mahram_required, is_company_name_required, ai_number, is_ai_number_required, is_online_payment_enable, sap_country_code, is_courier_receipt_applicants_level, is_cnic_no_required, is_walk_in_slot_enabled_call_centre, is_captcha_mandatory, is_show_vas_services_website, is_token_required_website, token_duration_website, is_save_app_details_mandatory, is_show_earlier_app_date, online_token_id, is_add_lbl_pr_without_courier, is_show_walkin_slot_upgrade, is_auto_slot_create_enabled, is_other_vsc_reschedule_restricted, is_skip_inscan_from_mission_stage, is_tax_cal_on_total_amount, is_total_amt_show_after_disclaimer, is_confirm_page_validation_required, confirm_page_token_duration, is_show_embassy_list, is_online_split_payment, is_show_operated_by, is_enabled_barcode_length, is_show_payment_mode_in_appt_ltr, is_upgrade_reason_req, is_cancel_disabled, is_scheduling_disabled, is_rescheduling_disabled, is_upgrade_disabled, is_configured_zpl_printer, is_skip_spoke_records_in_counterlist_report, is_skip_sms_for_spoke_courier_at_hub, is_total_grand_round_off_type, is_website_bio_process_enabled, is_enabled_enumber_length, enable_seperate_visa_type, is_online_walkin_payment_enabled, is_online_mofa_fee_pg_enbaled, is_fee_grid_required, usd_iar_receipt_trn, usd_iar_taxation_number, is_grand_total_tens_round_off, is_visafee_disabled, is_enjazfee_disabled, is_show_mofa_fee_paid_in_enjaz, icr_lang_id, is_online_payment_in_local_currency, is_visa_fee_nill_by_pp,it_region_classification)
+VALUES(50201,44750,'Bosnia and Herzegovina','SE',support',CURRENT_TIMESTAMP,support',CURRENT_TIMESTAMP,'1234567890', NULL, 2,34200,NULL, NULL, NULL, NULL, NULL, 14,22209,3, 7, NULL, 'Y', 1,'(GMT+2)Harrare, Pretoria','info.saudivscSWE@vfsglobal.com','Y', NULL, 'N', 'Y', 'N', 'vc.tasheer.com', 'Y', 'Y', 'N', 'N', '1', 'Default', NULL, NULL, 'N', 'N', 'N', 'N', 'N', 'N', 'Y', 'Y', 'Y', 7, 7, 0, 0, 'Y', NULL, NULL, NULL, NULL, NULL, NULL, 'N', 'N', 'Invoice And Receipt', '..... ........ . .......', 0, 'N', 'ENGLISH', '0', 'Up', 'Y', 'N', 'N', 'Y', 'N', NULL, 'N', 'N', 'N', NULL, 'N', NULL, NULL, NULL, NULL, 'N', NULL, 'N', NULL, NULL, 'N', 'N', 'N', 30, 'N', 'Y', NULL, NULL, NULL, NULL, 'N', 'N', NULL, NULL, 'N', 3, 'N', false, 'N', 'N', 'N', NULL, 'N', 'N', 'N', 'N', 'Y', 'N', NULL, NULL, 'N', 'N', 'N', 'N', 'N', 'N', NULL, NULL, 'N', NULL, NULL, NULL,2,'N', 'N','Asia');
+INSERT INTO t_country_translation (country_translation_id, country_id, language_id, country_display_name, created_by, created_date, modified_by, modified_date, company_name, icr_company_name, barcode_company_name, operated_by_company_name) VALUES(nextval('t_country_translation_seq'),50201,2'Bosnia and Herzegovina', 'Support', CURRENT_TIMESTAMP, 'support',CURRENT_TIMESTAMP, 'شركة في إف إس المتحدة للخدمات في الفلبين', NULL, 'Tasheer', 'تأشير');
+INSERT INTO t_embassy_in (embassy_in_id, embassy_in, created_by, created_date, modified_by, modified_date, display_embassy_in, enjaz_mapping_value, is_fetch_arabic_name_required, is_child_sponsor_edit_enable) VALUES(2,'Sarajevo', 'support', current_timestamp, 'support', current_timestamp,'Sarajevo', NULL, NULL, NULL);
+INSERT INTO t_consulate_code (consulate_id, consulate_name, country_id, additional_info, created_by, created_date, modified_by, modified_date, embassy_in) VALUES(2,'Embassy of the KSA Baku',50201, '', 'support', current_timestamp, 'support',current_timestamp ,2);
+INSERT INTO t_city_code (city_id, consulate_id, city_name, additional_info, email_id, contact_person, contact_number, created_by, created_date, modified_by, modified_date, country_id, is_vsc_enabled, is_vsc_selection_enabled) VALUES(2345,2,'Sarajevo', '', NULL, NULL, NULL, 'support', Current_timestamp, 'support', Current_timestamp,50201, 'Y', 'N');
+INSERT INTO t_vsc_code (vsc_id, vsc_center_name, roster_start_date, roster_end_date, roster_start_time, roster_end_time, contact_person, contact_number, email_id, vsc_center_address, city_id, vsc_type_id, additional_info, created_by, created_date, modified_by, modified_date, parent_vsc_id, vsc_code, vsc_timezone, last_application_stage, is_active, vsc_ip_address, taxation_number, vat_number, vsc_callcenter_number, support_email_id, is_mission_stages_configured, priority, threshold, is_pp_transfer_required, is_pp_change_enabled, mu_prior_dtlsupload_days, token_delay, token_enable, skip_mission_stages, is_auto_slot_upd_enbl_norl, is_auto_slot_upd_enbl_l, is_auto_slot_upd_enbl_l_p1, is_auto_slot_upd_enbl_l_p2, mu_appointment_days, is_lounge_consent_required, number_of_slots_to_be_merged, is_passport_return_enabled, is_etmsys_enabled, is_vertical_slot_merge, is_spoke_to_courier_directly, is_new_capacity_config_enabled, is_resubmission_sms_enabled, armed_forces_enabled, is_rework_sms_enabled, is_counter_config_enabled, is_enjaz_insurance_enabled, token_gen_time_validation, is_physical_form_enabled, is_csat_enabled, is_last_appl_stage_sms_enabled, is_bio_audit_skip_enabled, is_counter_courier_sms_recep, etmsys_url, is_pp_return_sms_enabled, agent_loc_min_wallet_amount, uuid_queue_size, uuid_cache_size, is_tax_exempt, is_data_purge_enabled, ewallet_id, audit_no_days_records, report_data_source, sap_vsc_code, is_show_in_slot_config_website, is_show_no_slot_config_website, is_tms_enabled_for_cc, ereceipt_branch_code, ereceipt_serial_no, is_vsc_manager_icr_enabled, is_cashier_icr_enabled, is_so_icr_enabled, is_finance_manager_icr_enabled, pan_number, sac_number, is_enabled_resubmission_at_hub, is_enabled_resubmission_at_spoke, is_enabled_reprint_barcode, is_auto_token_completed, is_enabled_current_day_normal_slot, is_enabled_current_day_lounge_slot, is_auto_call_token, is_courier_discount_enabled, courier_discount_max_num_of_applicants, max_courier_applicants_allowed, is_autopopulate_delivery, is_restrict_full_or_bio_reception, is_email_enabled_for_cancel_app, is_sms_enabled_for_cancel_app, is_rebio_enabled, is_token_audit_enabled, is_pp_transfer_source_vsc, is_pg_data_purge_enabled,vayd_sms_courier_flag) VALUES(43200,'Sarajevo','2024-11-26 08:00:00.000','2099-11-26 17:00:00.000','2024-11-26 08:00:00.000','2099-11-26 17:00:00.000','Maged','1234567890','info.saudivscSWE@vfsglobal.com','Info Mail Id',2345,41, '', NULL, NULL, 'support', current_timestamp, NULL,'TS','(GMT+2)Harrare, Pretoria', 'Biometric', 'Y', '1.1.1.1','NULL','NULL','', 'info.saudivscSWE@vfsglobal.com', 'Y', NULL, 100, 'N', 'N', NULL, NULL, 'N', 'Y', 'N', 'Y', 'N', 'N', NULL, 'N', 1, 'Y', 'Y', 'N', 'N', 'Y', 'N', 'N', 'N', 'Y', 'Y', NULL, 'N', 'Y', 'N', 'N', 'N', 'https://uattms.vfst.net:8080/eTMSys', 'N', NULL, 5000, 250, 'N', 'N', NULL, NULL, NULL, NULL, 'Y', 'Y', NULL, NULL, NULL, 'Y', 'Y', 'Y', 'Y', NULL, NULL, 'N', 'N', 'Y', 'N', 'N', 'N', NULL, 'N', NULL, NULL, NULL, NULL, NULL, NULL, 'N', NULL, 'N', 'N','N');
+INSERT INTO t_country_address_link (country_address_id, country_id, address_field_name, address_field_rank, mandatory, created_by, created_date, modified_by, modified_date, table_associated_with, column_associated_with) VALUES(next('t_country_address_link_seq'),50201, 'City', 4, 'Y', 'support', current_timestamp, 'support', current_timestamp, 'T_COURIER_COUNTRY_CITY_CODE', 'CITY_NAME');
+INSERT INTO t_country_address_link (country_address_id, country_id, address_field_name, address_field_rank, mandatory, created_by, created_date, modified_by, modified_date, table_associated_with, column_associated_with) VALUES(next('t_country_address_link_seq'),50201, 'Address Line 3', 3, 'Y', 'support', current_timestamp, 'support', current_timestamp, NULL, NULL);
+INSERT INTO t_country_address_link (country_address_id, country_id, address_field_name, address_field_rank, mandatory, created_by, created_date, modified_by, modified_date, table_associated_with, column_associated_with) VALUES(next('t_country_address_link_seq'),50201, 'Address Line 2', 2, 'Y', 'support', current_timestamp, 'support', current_timestamp, NULL, NULL);
+INSERT INTO t_country_address_link (country_address_id, country_id, address_field_name, address_field_rank, mandatory, created_by, created_date, modified_by, modified_date, table_associated_with, column_associated_with) VALUES(next('t_country_address_link_seq'),50201, 'Address Line 1', 1, 'Y', 'support', current_timestamp, 'support', current_timestamp, NULL, NULL);
+INSERT INTO t_country_lang_link (country_lang_link_id, country_id, language_id, is_default, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_lang_link_seq'),50201, 1, 'Y', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_currency_exchange_rate (currency_exchange_rate_id, currency_from, currency_to, effective_from, effective_to, rate, created_by, created_date, modified_by, modified_date, service_fee_exchange_rate, ask_rate) VALUES(nextval('t_currency_exchange_rate_seq'), 'USD', 'ERN', current_date, '2099-01-01 00:00:00.000', 12.34, 'support', current_timestamp, 'support', current_timestamp, 1.0000, 1.0000);
+INSERT INTO t_tax_dtls (tax_id, tax_mas_id, amount, is_percent, start_date, end_date, created_by, created_date, modified_by, modified_date, mode_of_tax_calculation) VALUES(56,324,23, 'Y', current_date, '2099-01-01 00:00:00.000', 'support', current_timestamp, 'support', current_timestamp, 'SERVICE');
+INSERT INTO t_country_biometric_excempt (country_biometric_id, country_id, age_below, age_above, is_dipolmatic_nal, dipolamatic_nal, applicant_res, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_country_biometric_exc_seq'), 50201, '6', '80', 'N', NULL, NULL, 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 1, 21, 1, 'N', 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 4, 21, 2, 'N', 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 3, 21, 3, 'N', 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 1, 1, 1, 'N', 'N',  'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 95, 1, 3, 'N', 'Y', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 86, 1, 2, 'N', 'Y', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 82, 2, 1, 'N', 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 4, 2, 2, 'N', 'N',  'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 264, 2, 3, 'N', 'N','support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 82, 4, 1, 'N', 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 82, 3, 1, 'N', 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 83, 3, 2, 'N', 'Y', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 84, 3, 3, 'N', 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 85, 3, 4, 'N', 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_status_config (bio_status_config_id, country_id, biometric_status_id, biometric_stage_id, biometric_status_order, is_default, is_comments_mandatory, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostatus_config_seq'),50201, 86, 3, 5, 'N', 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_stage_config (bio_stage_config_id, country_id, biometric_stage_id, biometric_stage_order, is_default, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostage_config_id_seq'),50201, 1, 1, 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_stage_config (bio_stage_config_id, country_id, biometric_stage_id, biometric_stage_order, is_default, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostage_config_id_seq'),50201, 3, 2, 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_stage_config (bio_stage_config_id, country_id, biometric_stage_id, biometric_stage_order, is_default, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostage_config_id_seq'),50201, 2, 3, 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_stage_config (bio_stage_config_id, country_id, biometric_stage_id, biometric_stage_order, is_default, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostage_config_id_seq'),50201, 4, 4, 'N', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_bio_stage_config (bio_stage_config_id, country_id, biometric_stage_id, biometric_stage_order, is_default, created_by, created_date, modified_by, modified_date) VALUES(nextval('country_biostage_config_id_seq'),50201, 21, 0,'N', 'support', current_timestamp, 'support',current_timestamp);
+INSERT INTO t_sms_country_lang_link (sms_country_lang_id, country_id, language_id, created_by, created_date, modified_by, modified_date, is_enabled_for_sms, is_enabled_for_trackandtrace) VALUES(nextval('t_sms_country_lang_link_seq',50201,1, 'support', current_timestamp, 'support', current_timestamp, 'Y', 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,21, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,22, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,23, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,24, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,25, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,26, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,27, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,28, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,29, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,30, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,32, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,33, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,34, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,35, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,36, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,37, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,38, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,39, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,40, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,41, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,42, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,43, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,44, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,145, 'support', current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,146, 'support', current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,46, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,49, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,51, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,61, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,62, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,63, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,142, 'support', current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,152, 'support', current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,153, 'support', current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,31, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,151, 'support', current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,150, 'support', current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,82, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,83, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,84, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,50, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,64, 'support',  current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,156, 'support', current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,154, 'support', current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,81, 'support',  current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,157, 'support', current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_sms_scanstage_link (country_sms_scanstage_link_id, country_id, scan_stage_id, created_by, created_date, modified_by, modified_date, is_sms_enabled) VALUES(nextval('t_count_sms_scanstag_lnk_seq'),50201,155, 'support', current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_vsc_pay_mode_link (vsc_pay_mode_id, country_id, vsc_id, payment_mode_id, process_type, show_opsys, show_website, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_vsc_pay_mode_link_seq'),50201,43200,104,'Full', 'Y', 'Y', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_vsc_pay_mode_link (vsc_pay_mode_id, country_id, vsc_id, payment_mode_id, process_type, show_opsys, show_website, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_vsc_pay_mode_link_seq'),50201,43200,101,'Full', 'Y', 'Y', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_vsc_pay_mode_link (vsc_pay_mode_id, country_id, vsc_id, payment_mode_id, process_type, show_opsys, show_website, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_vsc_pay_mode_link_seq'),50201,43200,6050,'Full', 'Y', 'Y', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_vsc_pay_mode_link (vsc_pay_mode_id, country_id, vsc_id, payment_mode_id, process_type, show_opsys, show_website, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_vsc_pay_mode_link_seq'),50201,43200,6053,'Full', 'Y', 'Y', 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_vsc_refund_pay_mode_link (country_refund_pay_mode_id, country_id, vsc_id, payment_mode_id, created_by, created_date, modified_by, modified_date, is_applicable) VALUES(nextval('t_vsc_refund_pay_mode_link'),50201,43200,104, 'support',current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_vsc_refund_pay_mode_link (country_refund_pay_mode_id, country_id, vsc_id, payment_mode_id, created_by, created_date, modified_by, modified_date, is_applicable) VALUES(nextval('t_vsc_refund_pay_mode_link'),50201,43200,101, 'support',current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_vsc_refund_pay_mode_link (country_refund_pay_mode_id, country_id, vsc_id, payment_mode_id, created_by, created_date, modified_by, modified_date, is_applicable) VALUES(nextval('t_vsc_refund_pay_mode_link'),50201,43200,6050, 'support',current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_vsc_refund_pay_mode_link (country_refund_pay_mode_id, country_id, vsc_id, payment_mode_id, created_by, created_date, modified_by, modified_date, is_applicable) VALUES(nextval('t_vsc_refund_pay_mode_link'),50201,43200,6053, 'support',current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_menu_feature (country_menu_id, country_id, is_cancel, is_modify, is_family_appointment, is_reschedule, is_waitlist, created_by, created_date, modified_by, modified_date, number_of_applicants, is_appointment_booking_duration_validation, is_sponsor_dtls_mandatory_in_website, is_show_enjaz_fee_in_website, is_show_visa_fee_in_website, is_mobile_days_validate_enabled, phone_number_starts_with, phone_number_days_count, phone_number_passport_count, is_reschedule_restricted, max_reschedule_count, max_appointment_date_count, max_reschdule_date_count, print_appt_letter_day_count, is_send_app_confirmation_sms, is_reprint_website_appt_letter_for_no_show, is_send_refund_web_form_link, is_print_qr_code, is_mofa_fee_checkbox_enabled, is_hide_representative_option, is_mofa_fee_paid_outside, is_mofa_fee_paid, is_mofa_fee_notpaid, hajj_umrah_qr_code, is_vas_section_enabled_website, is_reception_upgrade_applicant_level, is_vayd_enabled, vas_emailid, tax_percentage_1, tax_percentage_2, is_print_preapproval_and_enumber_barcode, is_show_vat_in_amount_in_icr) VALUES(nextval('country_menu_feature_seq'),50201,, 'Y', 'Y', 'Y', 'Y', 'Y', 'support', current_timestamp, 'support', current_timestamp, 5, 'N', 'N', 'Y', 'Y', 'N','23', NULL, NULL, 'N', NULL, 30, 30, 0, 'N', NULL, 'N', 'Y', NULL, 'N', NULL, 'N', 'N', 'N', 'Y', 'N', 'N', NULL, NULL, NULL, 'N', 'N');
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL9', 'Status Tracking', 'Enum', 'Lead time for update of status tracking', NULL, current_timestamp,'support',current_timestamp, 'support', 50201, 98);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL8', 'Status Tracking', 'Enum', 'Provider shall provide Applicants with a means of finding out the status of their Visa Application', NULL, current_timestamp,'support',current_timestamp, 'support', 50201, 98);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL7', 'Reporting', 'Dispute', 'Provider shall provide all management reports in a timely fashion', NULL, current_timestamp,'support', current_timestamp, 'support', 50201, 100);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL6', 'Application Return', 'Dispute', 'The time taken to return the Applicants completed travel document once received from the Embassy', NULL, current_timestamp,'support',current_timestamp, 'support', 50201, 90);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL5', 'Biometrics', 'Enum', 'Provider shall record facial images to an agreed quality threshold', NULL, current_timestamp,'support',  current_timestamp, 'support', 50201, 99);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL4', 'Biometrics', 'Enum', 'Provider shall record finger scans to an agreed quality threshold, attach a reason for bypassing', NULL, current_timestamp,'support',  current_timestamp, 'support', 50201, 99);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL3', 'Biometrics', 'Enum', 'Provider shall not collect biometrics from those Applicants that are exempt', NULL, current_timestamp,'support', current_timestamp, 'support', 50201, 98);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL2', 'Generic Visa Application Services', 'Enum', 'Time taken to complete an Application process will be minimum required to provide effective service', NULL, current_timestamp,'support',   current_timestamp, 'support', 50201, 90);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL12', 'Customer Satisfaction', 'Enum', 'Applicant feedback on their satisfaction with the Services provided by Provider', NULL, current_timestamp,'support',    current_timestamp, 'support', 50201, 95);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL11', 'Biometrics', 'Enum', 'Provider shall capture certain biometric and biographic data as specified by MoFA', NULL, current_timestamp,'support',current_timestamp, 'support', 50201, 100);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL10', 'Fee Handling', 'Enum', 'Provider shall collect the correct Visa Fee and Service Fees for the appropriate Visa category', NULL, current_timestamp,'support', current_timestamp, 'support', 50201, 100);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'NCSL1', 'Application Sorting', 'Enum', 'Provider shall clearly label Visa Application forms as belonging to a particular category', NULL, current_timestamp,'support',     current_timestamp, 'support', 50201, 99);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'CSL8', 'Application Delivery to Embassies', 'Enum', 'Delivery of all received Visa Application forms and mandatory supporting documents to the Embassy', NULL, current_timestamp,'support', current_timestamp, 'support', 50201, 100);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'CSL7', 'Biometric Recording', 'Enum', 'Integrity of association between Biometric Record, Application Number and the Applicant', NULL, current_timestamp,'support',current_timestamp, 'support', 50201, 100);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'CSL6', 'Data Entry', 'Enum', 'Provider shall correctly enter data from Visa Application form onto the Online Application System', NULL, current_timestamp,'support',  current_timestamp, 'support', 50201, 100);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'CSL5', 'Biometrics', 'TimeStamp', 'Provider shall Collect Video Recordings of each Applicants Biometrics Recording', NULL, current_timestamp,'support', current_timestamp, 'support', 50201, 100);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'CSL4', 'Biometrics', 'Enum', 'Provider shall correctly identify the Applicants against their passport details', NULL, current_timestamp,'support',   current_timestamp, 'support', 50201, 100);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'CSL3', 'Communications Availability', 'TimeStamp', 'Commercially reasonable efforts to maintain data communication connectivity between VSC and MoFA ISP', NULL, current_timestamp,'support',    current_timestamp, 'support', 50201, 95);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'CSL2', 'Fee Handling', 'Dispute', 'Provider shall transfer all due charges and fees to MoFA weekly', NULL, current_timestamp,'support', current_timestamp, 'support', 50201, 98);
+INSERT INTO t_sla_code (sla_id, sla_code, sla_name, sla_type, sla_desc, sequence_num, created_date, created_by, modified_date, modified_by, country_id, defined_sla) VALUES(nextval('t_sla_code_seq'), 'CSL1', 'Generic Visa Application Services', 'Dispute', 'Opening hours of VSCs will reflect local business opening hours and shall be agreed at a local level', NULL, current_timestamp,'support',current_timestamp, 'support', 50201, 100);
+INSERT INTO t_vsc_working_days (vsc_working_day_id, is_working, vsc_id, day_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_vsc_working_days_seq), 'N',43200,1, NULL, NULL, 'spinebiz_yuvaraje', '2024-10-17 17:11:08.509');
+INSERT INTO t_vsc_working_days (vsc_working_day_id, is_working, vsc_id, day_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_vsc_working_days_seq), 'Y',43200,2, NULL, NULL, 'spinebiz_yuvaraje', '2024-10-17 17:10:08.625');
+INSERT INTO t_vsc_working_days (vsc_working_day_id, is_working, vsc_id, day_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_vsc_working_days_seq), 'Y',43200,3, NULL, NULL, 'spinebiz_yuvaraje', '2024-10-17 17:10:18.413');
+INSERT INTO t_vsc_working_days (vsc_working_day_id, is_working, vsc_id, day_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_vsc_working_days_seq), 'Y',43200,4, NULL, NULL, 'spinebiz_yuvaraje', '2024-10-17 17:10:28.488');
+INSERT INTO t_vsc_working_days (vsc_working_day_id, is_working, vsc_id, day_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_vsc_working_days_seq), 'Y',43200,5, NULL, NULL, 'spinebiz_yuvaraje', '2024-10-17 17:10:50.893');
+INSERT INTO t_vsc_working_days (vsc_working_day_id, is_working, vsc_id, day_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_vsc_working_days_seq), 'Y',43200,6, NULL, NULL, 'spinebiz_yuvaraje', '2024-10-17 17:10:59.716');
+INSERT INTO t_vsc_working_days (vsc_working_day_id, is_working, vsc_id, day_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_vsc_working_days_seq), 'N',43200,7, NULL, NULL, 'spinebiz_yuvaraje', '2024-10-17 17:11:18.074');
+INSERT INTO t_vas_vsc_link (vas_service_id, vsc_id, created_by, created_date, modified_by, modified_date, vas_vsc_link_id, is_enable) VALUES(121,43200, 'support', current_timestamp, 'support', current_timestamp, nextval('t_vas_vsc_link_seq'), 'Y');
+INSERT INTO t_vas_vsc_link (vas_service_id, vsc_id, created_by, created_date, modified_by, modified_date, vas_vsc_link_id, is_enable) VALUES(122,43200, 'support', current_timestamp, 'support', current_timestamp, nextval('t_vas_vsc_link_seq'), 'N');
+INSERT INTO t_country_rework_reason (rework_reason_id, country_id, reason_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_country_rework_reason_seq'), 50201, 24, 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_rework_reason (rework_reason_id, country_id, reason_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_country_rework_reason_seq'), 50201, 23, 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_rework_reason (rework_reason_id, country_id, reason_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_country_rework_reason_seq'), 50201, 20, 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_rework_reason (rework_reason_id, country_id, reason_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_country_rework_reason_seq'), 50201, 13, 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_rework_reason (rework_reason_id, country_id, reason_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_country_rework_reason_seq'), 50201, 12, 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_rework_reason (rework_reason_id, country_id, reason_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_country_rework_reason_seq'), 50201, 25, 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_rework_reason (rework_reason_id, country_id, reason_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_country_rework_reason_seq'), 50201, 9, 'support',  current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_rework_reason (rework_reason_id, country_id, reason_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_country_rework_reason_seq'), 50201, 10, 'support', current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_rework_reason (rework_reason_id, country_id, reason_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_country_rework_reason_seq'), 50201, 3, 'support',  current_timestamp, 'support', current_timestamp);
+INSERT INTO t_country_rework_reason (rework_reason_id, country_id, reason_id, created_by, created_date, modified_by, modified_date) VALUES(nextval('t_country_rework_reason_seq'), 50201, 2, 'support',  current_timestamp, 'support', current_timestamp);
+INSERT INTO t_insurance_service_fee_rate (insurance_service_fee_rate_id, vsc_id, effective_from, effective_to, service_fee_rate, created_by, created_date, modified_by, modified_date, pg_amount) VALUES(nextval('t_insurance_service_fee_seq'),43200, current_date, '2099-01-01 00:00:00.000', 43.0000, 'support', current_timestamp, 'support', current_timestamp, 1.0000);
+INSERT INTO t_country_pay_mode_link (country_pay_mode_id, country_id, payment_mode_id, created_by, created_date, modified_by, modified_date, show_in_website) VALUES(nextval('t_country_pay_mode_link_seq'),50201,104,'support', current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_pay_mode_link (country_pay_mode_id, country_id, payment_mode_id, created_by, created_date, modified_by, modified_date, show_in_website) VALUES(nextval('t_country_pay_mode_link_seq'),50201,101,'support', current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_pay_mode_link (country_pay_mode_id, country_id, payment_mode_id, created_by, created_date, modified_by, modified_date, show_in_website) VALUES(nextval('t_country_pay_mode_link_seq'),50201,,'support', current_timestamp, 'support', current_timestamp, 'N');
+INSERT INTO t_country_pay_mode_link (country_pay_mode_id, country_id, payment_mode_id, created_by, created_date, modified_by, modified_date, show_in_website) VALUES(nextval('t_country_pay_mode_link_seq'),50201,6050,'support', current_timestamp, 'support', current_timestamp, 'Y');
+INSERT INTO t_country_pay_mode_link (country_pay_mode_id, country_id, payment_mode_id, created_by, created_date, modified_by, modified_date, show_in_website) VALUES(nextval('t_country_pay_mode_link_seq'),50201,6053,'support', current_timestamp, 'support', current_timestamp, 'Y');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

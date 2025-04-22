@@ -150,5 +150,43 @@ public class ScriptServiceImpl {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
     }
+	public ResponseEntity<Resource> generatecountryvisalinkUATOutput() throws InvalidFormatException {
+        try {
+            File excelFile = new File(FILE_PATH);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet sheet = workbook.getSheet("countryvisalink UAT Output");
+
+            if (sheet == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            StringBuilder scriptContent = new StringBuilder();
+            for (int i = 4; i <= 315; i++) { // B5 to B20 (zero-based index)
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(1); // Column B (index 1)
+                    if (cell != null) {
+                        scriptContent.append(cell.getStringCellValue().toString()).append("\n");
+                    }
+                }
+            }
+            workbook.close();
+
+            // Write data to script.txt
+            File scriptFile = new File("script.txt");
+            try (FileWriter writer = new FileWriter(scriptFile)) {
+                writer.write(scriptContent.toString());
+            }
+
+            // Return file for download
+            Resource fileResource = new FileSystemResource(scriptFile);
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=countryvisalink UAT Output.sql")
+                    .body(fileResource);
+
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
 
 }

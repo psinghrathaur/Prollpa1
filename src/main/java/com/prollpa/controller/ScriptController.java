@@ -55,5 +55,17 @@ public class ScriptController {
 	  return null;
   }
   
+  @GetMapping("/generatecountryvisalinkUATOutput")
+  public ResponseEntity<Resource> generatecountryvisalinkUATOutput()  {
+  try {
+		return scriptService.generatecountryvisalinkUATOutput();
+	} catch (InvalidFormatException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+  return null;
+}
+
+  
 
 }

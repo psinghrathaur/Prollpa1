@@ -188,5 +188,402 @@ public class ScriptServiceImpl {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
     }
+	
+	public ResponseEntity<Resource> generateNewLangNationalityUATOutput() throws InvalidFormatException {
+        try {
+            File excelFile = new File(FILE_PATH);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet sheet = workbook.getSheet("New Lang Nationality UAT Output");
+
+            if (sheet == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            StringBuilder scriptContent = new StringBuilder();
+            for (int i = 4; i <= 300; i++) { // B5 to B20 (zero-based index)
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(0); // Column B (index 1)
+                    if (cell != null) {
+                        scriptContent.append(cell.getStringCellValue().toString()).append("\n");
+                    }
+                }
+            }
+            workbook.close();
+
+            // Write data to script.txt
+            File scriptFile = new File("script.txt");
+            try (FileWriter writer = new FileWriter(scriptFile)) {
+                writer.write(scriptContent.toString());
+            }
+
+            // Return file for download
+            Resource fileResource = new FileSystemResource(scriptFile);
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=New Lang Nationality UAT Output.sql")
+                    .body(fileResource);
+
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+	
+	
+	public ResponseEntity<Resource> generateNewLangCommonUATLiveOutput() throws InvalidFormatException {
+        try {
+            File excelFile = new File(FILE_PATH);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet sheet = workbook.getSheet("NewLangCommon UATLive Output");
+
+            if (sheet == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            StringBuilder scriptContent = new StringBuilder();
+            for (int i = 4; i <= 300; i++) { // B5 to B20 (zero-based index)
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(0); // Column A (index 1)
+                    if (cell != null) {
+                        scriptContent.append(cell.getStringCellValue().toString()).append("\n");
+                    }
+                }
+            }
+            workbook.close();
+
+            // Write data to script.txt
+            File scriptFile = new File("script.txt");
+            try (FileWriter writer = new FileWriter(scriptFile)) {
+                writer.write(scriptContent.toString());
+            }
+
+            // Return file for download
+            Resource fileResource = new FileSystemResource(scriptFile);
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=New Lang Nationality UAT Output.sql")
+                    .body(fileResource);
+
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
+	
+	
+	
+	public ResponseEntity<Resource> generateVisaCountryDocLinkOutpuLive() throws InvalidFormatException {
+        try {
+            File excelFile = new File(FILE_PATH);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet sheet = workbook.getSheet("Visa Country DocLink Outpu Live");
+
+            if (sheet == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            StringBuilder scriptContent = new StringBuilder();
+            for (int i = 4; i <= 300; i++) { // B5 to B20 (zero-based index)
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(1); // Column A (index 1)
+                    if (cell != null) {
+                        scriptContent.append(cell.getStringCellValue().toString()).append("\n");
+                    }
+                }
+            }
+            workbook.close();
+
+            // Write data to script.txt
+            File scriptFile = new File("script.txt");
+            try (FileWriter writer = new FileWriter(scriptFile)) {
+                writer.write(scriptContent.toString());
+            }
+
+            // Return file for download
+            Resource fileResource = new FileSystemResource(scriptFile);
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=New Lang Nationality UAT Output.sql")
+                    .body(fileResource);
+
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+	
+	
+	public ResponseEntity<Resource> generateVisaCountryDocLinkOutputUAT() throws InvalidFormatException {
+        try {
+            File excelFile = new File(FILE_PATH);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet sheet = workbook.getSheet("Visa Country DocLink Output UAT");
+
+            if (sheet == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            StringBuilder scriptContent = new StringBuilder();
+            for (int i = 4; i <= 300; i++) { // B5 to B20 (zero-based index)
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(1); // Column B (index 1)
+                    if (cell != null) {
+                        scriptContent.append(cell.getStringCellValue().toString()).append("\n");
+                    }
+                }
+            }
+            workbook.close();
+
+            // Write data to script.txt
+            File scriptFile = new File("script.txt");
+            try (FileWriter writer = new FileWriter(scriptFile)) {
+                writer.write(scriptContent.toString());
+            }
+
+            // Return file for download
+            Resource fileResource = new FileSystemResource(scriptFile);
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=New Lang Nationality UAT Output.sql")
+                    .body(fileResource);
+
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
+	public ResponseEntity<Resource> generatecountryvisalinkLiveOutput() throws InvalidFormatException {
+        try {
+            File excelFile = new File(FILE_PATH);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet sheet = workbook.getSheet("countryvisalink Live Output");
+
+            if (sheet == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            StringBuilder scriptContent = new StringBuilder();
+            for (int i = 4; i <= 300; i++) { // B5 to B20 (zero-based index)
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(1); // Column B (index 1)
+                    if (cell != null) {
+                        scriptContent.append(cell.getStringCellValue().toString()).append("\n");
+                    }
+                }
+            }
+            workbook.close();
+
+            // Write data to script.txt
+            File scriptFile = new File("script.txt");
+            try (FileWriter writer = new FileWriter(scriptFile)) {
+                writer.write(scriptContent.toString());
+            }
+
+            // Return file for download
+            Resource fileResource = new FileSystemResource(scriptFile);
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=New Lang Nationality UAT Output.sql")
+                    .body(fileResource);
+
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+	
+	public ResponseEntity<Resource> generateVSCVisaInsuranceUATOutput() throws InvalidFormatException {
+        try {
+            File excelFile = new File(FILE_PATH);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet sheet = workbook.getSheet("VSC Visa Insurance UAT Output");
+
+            if (sheet == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            StringBuilder scriptContent = new StringBuilder();
+            for (int i = 4; i <= 300; i++) { // B5 to B20 (zero-based index)
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(1); // Column B (index 1)
+                    if (cell != null) {
+                        scriptContent.append(cell.getStringCellValue().toString()).append("\n");
+                    }
+                }
+            }
+            workbook.close();
+
+            // Write data to script.txt
+            File scriptFile = new File("script.txt");
+            try (FileWriter writer = new FileWriter(scriptFile)) {
+                writer.write(scriptContent.toString());
+            }
+
+            // Return file for download
+            Resource fileResource = new FileSystemResource(scriptFile);
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=New Lang Nationality UAT Output.sql")
+                    .body(fileResource);
+
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+	
+	public ResponseEntity<Resource> generateVSCVisaInsuranceLiveOutput() throws InvalidFormatException {
+        try {
+            File excelFile = new File(FILE_PATH);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet sheet = workbook.getSheet("VSC Visa Insurance Live Output");
+
+            if (sheet == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            StringBuilder scriptContent = new StringBuilder();
+            for (int i = 4; i <= 300; i++) { // B5 to B20 (zero-based index)
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(1); // Column B (index 1)
+                    if (cell != null) {
+                        scriptContent.append(cell.getStringCellValue().toString()).append("\n");
+                    }
+                }
+            }
+            workbook.close();
+
+            // Write data to script.txt
+            File scriptFile = new File("script.txt");
+            try (FileWriter writer = new FileWriter(scriptFile)) {
+                writer.write(scriptContent.toString());
+            }
+
+            // Return file for download
+            Resource fileResource = new FileSystemResource(scriptFile);
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=New Lang Nationality UAT Output.sql")
+                    .body(fileResource);
+
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+	
+	
+	public ResponseEntity<Resource> generateCourierCityOutput() throws InvalidFormatException {
+        try {
+            File excelFile = new File(FILE_PATH);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet sheet = workbook.getSheet("Courier City Output");
+
+            if (sheet == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            StringBuilder scriptContent = new StringBuilder();
+            for (int i = 4; i <= 300; i++) { // B5 to B20 (zero-based index)
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(0); // Column B (index 1)
+                    if (cell != null) {
+                        scriptContent.append(cell.getStringCellValue().toString()).append("\n");
+                    }
+                }
+            }
+            workbook.close();
+
+            // Write data to script.txt
+            File scriptFile = new File("script.txt");
+            try (FileWriter writer = new FileWriter(scriptFile)) {
+                writer.write(scriptContent.toString());
+            }
+
+            // Return file for download
+            Resource fileResource = new FileSystemResource(scriptFile);
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=New Lang Nationality UAT Output.sql")
+                    .body(fileResource);
+
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+	
+	public ResponseEntity<Resource> generateSMSforLocalLanguageOutput() throws InvalidFormatException {
+        try {
+            File excelFile = new File(FILE_PATH);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet sheet = workbook.getSheet("SMS for Local Language Output");
+
+            if (sheet == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            StringBuilder scriptContent = new StringBuilder();
+            for (int i = 4; i <= 300; i++) { // B5 to B20 (zero-based index)
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(1); // Column B (index 1)
+                    if (cell != null) {
+                        scriptContent.append(cell.getStringCellValue().toString()).append("\n");
+                    }
+                }
+            }
+            workbook.close();
+
+            // Write data to script.txt
+            File scriptFile = new File("script.txt");
+            try (FileWriter writer = new FileWriter(scriptFile)) {
+                writer.write(scriptContent.toString());
+            }
+
+            // Return file for download
+            Resource fileResource = new FileSystemResource(scriptFile);
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=New Lang Nationality UAT Output.sql")
+                    .body(fileResource);
+
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+	public ResponseEntity<Resource> generateHolidayScriptOutput() throws InvalidFormatException {
+        try {
+            File excelFile = new File(FILE_PATH);
+            Workbook workbook = new XSSFWorkbook(excelFile);
+            Sheet sheet = workbook.getSheet("Holiday Script Output");
+
+            if (sheet == null) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            StringBuilder scriptContent = new StringBuilder();
+            for (int i = 4; i <= 300; i++) { // B5 to B20 (zero-based index)
+                Row row = sheet.getRow(i);
+                if (row != null) {
+                    Cell cell = row.getCell(1); // Column A (index 1)
+                    if (cell != null) {
+                        scriptContent.append(cell.getStringCellValue().toString()).append("\n");
+                    }
+                }
+            }
+            workbook.close();
+
+            // Write data to script.txt
+            File scriptFile = new File("script.txt");
+            try (FileWriter writer = new FileWriter(scriptFile)) {
+                writer.write(scriptContent.toString());
+            }
+
+            // Return file for download
+            Resource fileResource = new FileSystemResource(scriptFile);
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=New Lang Nationality UAT Output.sql")
+                    .body(fileResource);
+
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+	
+	
 
 }
